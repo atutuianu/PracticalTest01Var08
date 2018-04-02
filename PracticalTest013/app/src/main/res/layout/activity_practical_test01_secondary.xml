@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ro.pub.cs.systems.eim.practicaltest01.view.PracticalTest01MainActivity">
+    tools:context="ro.pub.cs.systems.eim.practicaltest01.view.PracticalTest01SecondaryActivity">
 
 
     <EditText
@@ -17,7 +17,7 @@
         android:layout_alignParentRight="true"
         android:gravity="left"
         android:hint="Riddle"
-        android:enabled="true"
+        android:enabled="false"
         android:saveEnabled="false"
         />
 
@@ -32,20 +32,44 @@
         android:layout_alignParentRight="true"
         android:gravity="left"
         android:hint="Answer"
+        android:enabled="false"
+        android:saveEnabled="false"
+        />
+
+    <EditText
+        android:id="@+id/attempt"
+        android:layout_below="@id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="left"
+        android:hint="Attempt"
         android:enabled="true"
         android:saveEnabled="false"
         />
 
+
+
     <Button
-        android:id="@+id/play_button"
-        android:layout_below="@id/answer"
+    android:id="@+id/check_button"
+    android:layout_below="@id/attempt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:text="CHECK"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_below="@id/check_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_centerInParent="true"
-        android:text="PLAY"/>
-
-
+        android:text="BACK"/>
 
 
 </RelativeLayout>
